@@ -4,11 +4,10 @@
     "description": "Tests with cypress ",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
-        "chrome1": "npx cypress run --browser chrome",
-        "chrome2": "npx cypress run --browser chrome --headed",
-        "electron1": "npx cypress run --browser electron",
-        "electron2": "npx cypress run --browser electron --headed"
+        "chrome1": "npx cypress run --config-file cypress.json --browser chrome",
+        "chrome2": "npx cypress run --config-file cypress.json --browser chrome --headed",
+        "electron1": "npx cypress run --config-file cypress.env.json --browser electron",
+        "electron2": "npx cypress run --config-file cypress.env.json --browser electron --headed"
     },
     "keywords": [
         "test",

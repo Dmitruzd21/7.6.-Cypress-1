@@ -49,7 +49,8 @@ Cypress.Commands.add('login', (email, password) => {
 });
 
  Cypress.Commands.add('addToFavorite', (title) => { 
-    // ищем родителя книги и добавляем в избранное
+    cy.wait(3000);
+   // ищем родителя книги и добавляем в избранное
     cy.xpath(`//div[./div[./div[contains(text(), "${title}")]]]`).within(() =>{
        cy.contains('Add to favorite').click();
     });

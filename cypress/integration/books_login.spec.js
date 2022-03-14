@@ -1,15 +1,14 @@
 const {generateName} = require("../fixtures/data");
+const {mail, password} = require("../fixtures/login_data.json");
 
 const bookDescription = "Вы можете прочитать хорошую книгу";
 const bookAuthors = "Хороший автор";
-const mail = "test@test.com";
-const password = "test";
 
  it("Should login successfuly", () => {
     cy.contains('Books list');
     cy.login(mail, password);
     cy.contains('Добро пожаловать test@test.com').should("be.visible");
-});
+ });
 
  it("Should not login with empty email", () => {
     cy.login(" ", password);
