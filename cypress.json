@@ -4,17 +4,5 @@
     "retries":
        {"openMode":1},
     "viewportWidth": 1100,
-    "viewportHeight": 670,
-    "browsers": [
-        {
-            "name": "chrome",
-            "family": "chromium",
-            "channel":"stable",
-            "displayName":"Chrome",
-            "version":"99.0.4844.51",
-            "path": "",
-            "minSupportedVersion":64,
-            "majorVersion":99
-        }
-    ]
+    "viewportHeight": 670
 }
